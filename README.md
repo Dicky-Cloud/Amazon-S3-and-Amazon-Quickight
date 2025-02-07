@@ -46,7 +46,7 @@ Click Create bucket on the S3 page.
 
 Enter Bucket Details
 Bucket Name: Enter a unique name (e.g., dicky-amazon-project).
-Region: Select the nearest region (e.g., Asia Pacific (Singapore)).
+Region: Select the nearest region (e.g., Us-east-1(Virginia)).
 Configure Options
 ![image](https://github.com/user-attachments/assets/5abd4f7d-c81f-4bb5-888f-d507d56d7158)
 
