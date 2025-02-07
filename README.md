@@ -18,3 +18,19 @@ Use the following step-by-step written tutorial or watch this Tech With Lucy You
 
 # Step 1 : Download the Dataset
 ![image](https://github.com/user-attachments/assets/682c696c-3e0b-48ec-97b5-c7f9546d7ce3)
+This image shows a GitHub repository named techwithlucy/youtube with a folder called 2-s3-quicksight. Inside this folder, there are two important files:
+
+Amazon-Bestseller-Dataset.csv
+
+This is a CSV file containing data on 50,000 best-selling products on Amazon.com.
+manifest.json
+
+This is a configuration file required to connect the dataset from Amazon S3 to Amazon QuickSight. It typically includes information like the S3 URL of your dataset.
+Download Steps
+To download these files:
+
+Click on the file name (e.g., Amazon-Bestseller-Dataset.csv).
+On the next page, click the "Raw" button.
+Press Control+S (Windows) or Command+S (Mac) to save the file to your computer.
+Repeat the process for the manifest.json file.
+Once you've downloaded the files, you can proceed to the next step, which is uploading them to Amazon S3. 
