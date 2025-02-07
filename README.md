@@ -100,3 +100,5 @@ Bucket Configuration (Optional):
 Set access permissions and policies if needed.
 Ensure that your files are accessible to other services like Amazon QuickSight.
 This step is crucial to prepare your data for integration with Amazon QuickSight to create visualizations.
+
+# Step 3: Connect S3 Bucket with Amazon Quicksight
