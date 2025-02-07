@@ -34,3 +34,69 @@ On the next page, click the "Raw" button.
 Press Control+S (Windows) or Command+S (Mac) to save the file to your computer.
 Repeat the process for the manifest.json file.
 Once you've downloaded the files, you can proceed to the next step, which is uploading them to Amazon S3. 
+Next Steps:
+# Step 2 : Store the Dataset in Amazon S3
+![image](https://github.com/user-attachments/assets/5a0488c1-ecb7-4c65-baa4-0331d30bac52)
+
+Login to AWS
+Go to the AWS Management Console and search for S3.
+
+Create a Bucket
+Click Create bucket on the S3 page.
+
+Enter Bucket Details
+Bucket Name: Enter a unique name (e.g., dicky-amazon-project).
+Region: Select the nearest region (e.g., Asia Pacific (Singapore)).
+Configure Options
+![image](https://github.com/user-attachments/assets/5abd4f7d-c81f-4bb5-888f-d507d56d7158)
+
+Keep the default settings for Block Public Access (enabled).
+Click Create bucket.
+
+Explanation Before Uploading manifest.json
+![image](https://github.com/user-attachments/assets/f465d93c-9228-4992-8820-0a53e09462ea)
+
+Before uploading the manifest.json file to your system or application, you need to modify the code in a code editor like Visual Studio Code (VS Code) to ensure it reflects your S3 bucket name. Here's how you can do it:
+Steps to Modify the Code in VS Code
+Open the File in VS Code:
+
+Open manifest.json in Visual Studio Code.
+Locate the URIs Section:
+
+Find this part of the code:
+json
+Copy
+Edit
+"URIs": [
+    "s3://BUCKET-NAME/Amazon-Bestseller-Dataset.csv"
+]
+Replace BUCKET-NAME with Your S3 Bucket Name:
+
+Change BUCKET-NAME to the actual name of your S3 bucket. For example:
+json
+Copy
+Edit
+"URIs": [
+    "s3://dicky-amazon-project/Amazon-Bestseller-Dataset.csv"
+]
+Save the Changes:
+
+After making the changes, press Ctrl + S (Windows) or Cmd + S (Mac) to save the file.
+Verify the File:
+
+Ensure that the bucket name and file path are correct and match the S3 configuration.
+
+
+![image](https://github.com/user-attachments/assets/aa9b510f-7f83-4056-b965-c97c2457b7a1)
+
+Look for the bucket name you created earlier, such as Dicky-Amazon-Project.
+Click on the bucket name to open it.
+Upload Files:
+
+Click the Upload button within the bucket.
+Upload the Amazon-Bestseller-Dataset.csv and manifest.json files you downloaded earlier.
+Bucket Configuration (Optional):
+
+Set access permissions and policies if needed.
+Ensure that your files are accessible to other services like Amazon QuickSight.
+This step is crucial to prepare your data for integration with Amazon QuickSight to create visualizations.
