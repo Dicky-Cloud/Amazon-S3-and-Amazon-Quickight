@@ -102,3 +102,82 @@ Ensure that your files are accessible to other services like Amazon QuickSight.
 This step is crucial to prepare your data for integration with Amazon QuickSight to create visualizations.
 
 # Step 3: Connect S3 Bucket with Amazon Quicksight
+![image](https://github.com/user-attachments/assets/cf32d312-26a4-49e0-9761-31b42c1a1c7b)
+ Sign Up for Amazon QuickSight
+Fill in Contact Information:
+![image](https://github.com/user-attachments/assets/12f521eb-d0e9-4f54-bc0c-b180ccf0946b)
+
+Enter the email address to receive notifications, for example: dickyanggraini2409@gmail.com.
+Choose Authentication Method:
+
+Select Use IAM federated identities & QuickSight-managed users to authenticate using IAM or QuickSight credentials.
+If required, adjust other options like IAM Identity Center or Active Directory.
+Select QuickSight Region:
+
+Choose a region that matches your location. Example: US East (N. Virginia).
+![image](https://github.com/user-attachments/assets/be82a327-d7be-4d2d-88ac-b26c5172eedc)
+
+Setting Up QuickSight Access to AWS Services
+Account Info:
+
+QuickSight account name: Enter a name for your QuickSight account. Example: dicky.
+This will be used to identify and sign in to your QuickSight account.
+QuickSight Access to AWS Services:
+
+IAM Role:
+
+Use QuickSight-managed role (default): QuickSight will automatically create and manage an IAM role for accessing AWS resources.
+Use an existing role: Select this option to use an existing IAM role.
+Allow Access and Autodiscovery: Check the boxes for the services you want QuickSight to access:
+
+Amazon Redshift: Connect to Redshift databases for analysis.
+Amazon RDS: Access relational databases on RDS.
+IAM: Enable integration with AWS Identity and Access Management.
+Amazon S3: Provide access to S3 buckets.
+Click Select S3 buckets to choose specific buckets for QuickSight access.
+Continue:
+![image](https://github.com/user-attachments/assets/a181ffbe-5994-4d89-b8b6-09b83a5a888a)
+
+Click the Next or Continue button to proceed.
+Link Amazon S3 Buckets
+Select Buckets:
+
+Check the bucket(s) to link with QuickSight, for example: dicky-amazon-project.
+Use Select all to choose all available buckets.
+Grant Write Permissions (Optional):
+
+If using Athena Workgroup, check the box to grant Write permissions for Athena Workgroup.
+Finish Setup:
+
+Click the Finish button to save the configuration and complete the setup.
+![image](https://github.com/user-attachments/assets/9c2ef9e0-cbcf-4896-81b3-e70fa76b5b3f)
+
+# Step 4: Create Visualizations
+![image](https://github.com/user-attachments/assets/eadd36d8-5c5f-4462-909b-e4c2daf1b879)
+Select Data Source
+On the Datasets page, click the New dataset button.
+![image](https://github.com/user-attachments/assets/c3e1d225-5980-41a7-a2ab-19ec5143e94e)
+Choose S3 as the data source.
+Fill in Data Source Information
+In the New S3 data source dialog, provide the following details:
+Data source name: Enter a name for the data source, such as amazon-data-source.
+Upload a manifest file: Enter the URL or upload a manifest file.
+In the image, the manifest URL is:
+https://dicky-amazon-project.s3.us-east-1.amazonaws.com/manifest.json.
+Connect the Data
+Click the Connect button to link the S3 data source to QuickSight.
+Confirm and Proceed
+Once successfully connected, QuickSight will prompt you to verify or process the data before creating the dataset.
+Ensure that the displayed data matches your requirements, then proceed to the analysis phase.
+![image](https://github.com/user-attachments/assets/aafbd4fc-12bc-4e4f-94b7-8ebac5393d51)
+Create a Visualization
+Select the connected dataset, such as amazon-data-source.
+In the Data panel, choose the field you want to visualize, e.g., brand.
+Configure the visualization:
+Sort by: Select the brand field.
+Aggregation: Choose Count to calculate the number of records by brand.
+Sort order: Set to Descending to display brands with the highest record counts at the top.
+Visualization Output
+A bar chart will display the count of records for each brand.
+For example, the chart shows the distribution of data for brands like "Amazon Renewed", "Motorcraft", and others.
+Use the Apply button to save changes to the visualization.
