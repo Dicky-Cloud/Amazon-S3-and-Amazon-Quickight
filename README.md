@@ -14,6 +14,7 @@ in this tutorial, you will:
 • Store the dataset in Amazon S3 for scalable storage.
 
 • Connect Amazon S3 to Amazon QuickSight for data analysis.
+
 • Create visualizations to analyze trends and patterns.
 
 # Prerequisites
