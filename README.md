@@ -1,7 +1,6 @@
 # Created data visualizations using Amazon S3 and Amazon Quicksight, working with a large dataset of best-selling Amazon products
-<div align="center">
+
 ![s3 and quicksight drawio](https://github.com/user-attachments/assets/3d222e04-4726-4ee5-be7a-8839d84e6c8d)
-</div>
 
 In this project, you will learn how to create visualizations from a large dataset using Amazon S3 and Amazon QuickSight. 
 
