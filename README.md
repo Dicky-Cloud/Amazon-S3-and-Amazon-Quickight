@@ -9,6 +9,7 @@ This Tutorial from https://github.com/techwithlucy
 
 # What you will accomplish
 in this tutorial, you will: 
+
 • Download the dataset and prepare the necessary files.
 
 • Store the dataset in Amazon S3 for scalable storage.
